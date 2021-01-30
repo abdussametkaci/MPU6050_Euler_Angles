@@ -49,23 +49,23 @@ void MPU6050T::initialize(uint8_t accelScale, uint8_t gyroScale) {
   selectedAccel = accelScale;
   selectedGyro = gyroScale;
 
-  if (selectedAccel = ACCEL_FULL_SCALE_2G) {
+  if (selectedAccel == ACCEL_FULL_SCALE_2G) {
     accelSensitivity = ACCEL_2G_LSB_SENSITIVITY;
-  } else if (selectedAccel = ACCEL_FULL_SCALE_4G) {
+  } else if (selectedAccel == ACCEL_FULL_SCALE_4G) {
     accelSensitivity = ACCEL_4G_LSB_SENSITIVITY;
-  } else if (selectedAccel = ACCEL_FULL_SCALE_8G) {
+  } else if (selectedAccel == ACCEL_FULL_SCALE_8G) {
     accelSensitivity = ACCEL_8G_LSB_SENSITIVITY;
-  } else if (selectedAccel = ACCEL_FULL_SCALE_16G) {
+  } else if (selectedAccel == ACCEL_FULL_SCALE_16G) {
     accelSensitivity = ACCEL_16G_LSB_SENSITIVITY;
   }
 
-  if (selectedGyro = GYRO_FULL_SCALE_250DPS) {
-    gyroSensitivity = GYRO_250DPS_LSB_SENSITIVITY;
-  } else if (selectedGyro = GYRO_FULL_SCALE_500DPS) {
+  if (selectedGyro == GYRO_FULL_SCALE_250DPS) {
+    gyroSensitivity == GYRO_250DPS_LSB_SENSITIVITY;
+  } else if (selectedGyro == GYRO_FULL_SCALE_500DPS) {
     gyroSensitivity = GYRO_500DPS_LSB_SENSITIVITY;
-  } else if (selectedGyro = GYRO_FULL_SCALE_1000DPS) {
+  } else if (selectedGyro == GYRO_FULL_SCALE_1000DPS) {
     gyroSensitivity = GYRO_1000DPS_LSB_SENSITIVITY;
-  } else if (selectedGyro = GYRO_FULL_SCALE_2000DPS) {
+  } else if (selectedGyro == GYRO_FULL_SCALE_2000DPS) {
     gyroSensitivity = GYRO_2000DPS_LSB_SENSITIVITY;
   }
 
