@@ -60,7 +60,7 @@ void MPU6050T::initialize(uint8_t accelScale, uint8_t gyroScale) {
   }
 
   if (selectedGyro == GYRO_FULL_SCALE_250DPS) {
-    gyroSensitivity == GYRO_250DPS_LSB_SENSITIVITY;
+    gyroSensitivity = GYRO_250DPS_LSB_SENSITIVITY;
   } else if (selectedGyro == GYRO_FULL_SCALE_500DPS) {
     gyroSensitivity = GYRO_500DPS_LSB_SENSITIVITY;
   } else if (selectedGyro == GYRO_FULL_SCALE_1000DPS) {
